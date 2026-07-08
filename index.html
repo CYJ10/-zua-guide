@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>郑航指南 - 郑州航空工业管理学院龙子湖校区</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✈️</text></svg>">
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <header class="header">
+        <div class="header-inner">
+            <div class="logo">
+                <span class="logo-icon">✈️</span>
+                <div class="logo-text">
+                    <h1>郑航指南</h1>
+                    <p>ZUA Guide · 龙子湖校区</p>
+                </div>
+            </div>
+            <div class="header-badge">准大一新生专属</div>
+        </div>
+    </header>
+
+    <!-- 英雄区域 -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <h2>探索郑州航院，从这里开始</h2>
+            <p>宿舍、食堂、专业、分数线、周边……你想知道的，一站搜全</p>
+            <div class="search-wrapper">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="搜点什么吧？比如：宿舍有没有空调？食堂什么好吃？分数线多少？..." autocomplete="off">
+                    <button id="searchBtn" class="search-btn">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+                        搜索
+                    </button>
+                </div>
+                <!-- 热门搜索标签 -->
+                <div class="hot-tags">
+                    <span class="hot-label">🔥 热门搜索：</span>
+                    <span class="tag" data-search="宿舍条件">宿舍条件</span>
+                    <span class="tag" data-search="食堂">食堂美食</span>
+                    <span class="tag" data-search="分数线">录取分数线</span>
+                    <span class="tag" data-search="图书馆">图书馆</span>
+                    <span class="tag" data-search="军训">军训</span>
+                    <span class="tag" data-search="交通">怎么去学校</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分类快捷入口 -->
+    <section class="categories" id="categories">
+        <div class="section-title">
+            <h2>📂 按分类浏览</h2>
+            <p>点击卡片快速了解你关心的内容</p>
+        </div>
+        <div class="category-grid" id="categoryGrid">
+            <!-- JS动态生成 -->
+        </div>
+    </section>
+
+    <!-- 搜索结果区域 -->
+    <section class="results" id="resultsSection" style="display:none;">
+        <div class="section-title">
+            <h2 id="resultsTitle">搜索结果</h2>
+            <p id="resultsCount"></p>
+        </div>
+        <div class="results-grid" id="resultsGrid">
+            <!-- JS动态生成 -->
+        </div>
+        <div class="no-results" id="noResults" style="display:none;">
+            <div class="no-results-icon">🔍</div>
+            <h3>没有找到相关内容</h3>
+            <p>试试换个关键词？或者看看下面的热门搜索</p>
+        </div>
+    </section>
+
+    <!-- 关于本站 -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-left">
+                <h3>✈️ 郑航指南</h3>
+                <p>由郑航24级学长倾心整理，为准大一新生提供最全面的校园资讯</p>
+                <p class="footer-note">信息来源：学校官网、官方微信公众号、河南日报、大河网及各大公开平台</p>
+            </div>
+            <div class="footer-right">
+                <p>📍 郑州航空工业管理学院 龙子湖校区</p>
+                <p>🏫 郑州市郑东新区文苑西路15号</p>
+                <p class="footer-disclaimer">⚠️ 本站为非官方学生自建平台，数据仅供参考，最终以学校官方公布为准</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
