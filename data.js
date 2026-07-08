@@ -1040,5 +1040,114 @@ const SITE_DATA = [
 <h3>Q15：要不要大一考驾照？</h3>
 <p>建议考！大学时间相对自由，庙张附近有驾校，利用课余时间就能搞定。等工作了再考会麻烦很多。</p>
         `
+    },
+
+    // ==================== 新生必备清单 ====================
+    {
+        id: "checklist",
+        category: "入学清单",
+        icon: "✅",
+        title: "新生入学必备物品清单（可勾选）",
+        summary: "证件类、衣物类、洗漱类、电子类、药品类、军训类……照着清单逐项准备，不会漏！支持打勾标记。",
+        tags: ["清单", "必备", "带什么", "物品", "行李", "打包", "准备", "证件", "衣物", "药品", "军训", "开学"],
+        content: `
+<div class="checklist-container" id="checklistContainer">
+<p style="text-align:center;color:var(--text-light);margin-bottom:16px;">✅ 点击每一项即可标记已准备（数据保存在浏览器中）</p>
+
+<h3>📋 证件类（最重要！）</h3>
+<ul class="checklist" data-group="docs"><li data-id="doc1">录取通知书</li><li data-id="doc2">高考准考证</li><li data-id="doc3">身份证 + 复印件（建议多备几份）</li><li data-id="doc4">户口本复印件</li><li data-id="doc5">团员证 / 团组织关系转接材料</li><li data-id="doc6">一寸、二寸证件照（红底蓝底各备10张，留电子版）</li><li data-id="doc7">银行卡（学校发的+自己常用的）</li><li data-id="doc8">少量现金（应急用，大部分场景手机支付即可）</li></ul>
+
+<h3>👕 衣物类</h3>
+<ul class="checklist" data-group="clothes"><li data-id="c1">夏装（9月还很热，短袖多带）</li><li data-id="c2">秋装（10月降温快，长袖/薄外套）</li><li data-id="c3">冬装（郑州冬天干冷，厚羽绒服必备！寒假回家可不带）</li><li data-id="c4">内衣、袜子（多备，军训出汗量大）</li><li data-id="c5">运动鞋（军训穿！舒适最重要）</li><li data-id="c6">拖鞋（宿舍用）</li><li data-id="c7">正装一套（面试/活动偶尔需要，可选）</li></ul>
+
+<h3>🪥 洗漱用品</h3>
+<ul class="checklist" data-group="wash"><li data-id="w1">牙刷、牙膏、漱口杯</li><li data-id="w2">毛巾（2-3条）</li><li data-id="w3">洗发水、沐浴露</li><li data-id="w4">洗衣液/洗衣粉</li><li data-id="w5">衣架（多带几个！）</li><li data-id="w6">脸盆、水桶（可到校再买）</li><li data-id="w7">镜子、梳子</li><li data-id="w8">剃须刀（男生）</li></ul>
+
+<h3>🛏️ 床上用品</h3>
+<ul class="checklist" data-group="bed"><li data-id="b1">被子（夏凉被+秋冬厚被）</li><li data-id="b2">枕头</li><li data-id="b3">床单、被套、枕套（建议2套换洗）</li><li data-id="b4">蚊帐/床帘（军训后再装！）</li><li data-id="b5">床垫（可到校根据床尺寸买）</li></ul>
+
+<h3>💻 电子类</h3>
+<ul class="checklist" data-group="electronics"><li data-id="e1">手机 + 充电器</li><li data-id="e2">电脑 + 充电器（军训后再带！）</li><li data-id="e3">插排（宿舍插座有限，必带！）</li><li data-id="e4">充电宝</li><li data-id="e5">U盘</li><li data-id="e6">耳机</li><li data-id="e7">台灯（充电款，晚上断电后用）</li></ul>
+
+<h3>💊 药品类</h3>
+<ul class="checklist" data-group="medicine"><li data-id="m1">感冒药</li><li data-id="m2">退烧药</li><li data-id="m3">肠胃药（水土不服常见）</li><li data-id="m4">创可贴</li><li data-id="m5">藿香正气水/防中暑药（军训必备）</li><li data-id="m6">棉签、碘伏</li><li data-id="m7">个人特殊药品</li></ul>
+
+<h3>🪖 军训专用</h3>
+<ul class="checklist" data-group="military"><li data-id="mt1">防晒霜！！！（安热沙/理肤泉，多涂多补）</li><li data-id="mt2">军训鞋垫（买两双换着穿）</li><li data-id="mt3">大容量水杯</li><li data-id="mt4">湿巾/纸巾</li><li data-id="mt5">润喉糖（喊口号嗓子会哑）</li><li data-id="mt6">别针/针线（军训服不合身时应急）</li></ul>
+
+<h3>📦 到校再买也来得及的</h3>
+<ul class="checklist" data-group="later"><li data-id="l1">脸盆、水桶</li><li data-id="l2">垃圾桶、垃圾袋</li><li data-id="l3">晾衣杆</li><li data-id="l4">挂钩、收纳盒</li><li data-id="l5">文具（笔、本子等）</li><li data-id="l6">胶带、剪刀</li></ul>
+</div>
+        `
+    },
+
+    // ==================== 校园地图 ====================
+    {
+        id: "map",
+        category: "校园地图",
+        icon: "🗺️",
+        title: "龙子湖校区校园地图——不迷路指南",
+        summary: "教学楼在哪？快递站在哪？食堂怎么走？校医院在哪？——按方位标注清楚，开学不迷路。",
+        tags: ["地图", "位置", "导航", "教学楼", "食堂", "宿舍", "快递", "超市", "校医院", "怎么走", "在哪", "布局"],
+        content: `
+<h3>🗺️ 校园布局概览</h3>
+<p>龙子湖校区整体呈南北走向，主入口在<strong>西大门</strong>（文苑西路）。校区约1700亩，以下按方位说明：</p>
+
+<h3>🚪 校门</h3>
+<ul><li><strong>西大门（正门）：</strong>文苑西路，主入口。门口停放3架歼-7战斗机，标志性景观</li>
+<li><strong>南门：</strong>靠近拾光里商业街和菜鸟驿站，日常出入最频繁</li>
+<li><strong>北门：</strong>停放民航客机展示</li>
+<li><strong>东门：</strong>靠近东门商业街</li></ul>
+
+<h3>📚 教学核心区（校园中部）</h3>
+<ul><li><strong>图书馆：</strong>校园中心，沁湖畔，最显眼的建筑</li>
+<li><strong>基础教学楼（01教学楼）：</strong>图书馆北侧，大部分公共课在这里</li>
+<li><strong>专业教学楼群：</strong>分布在基础教学楼周边，各学院专业课教室</li>
+<li><strong>实验楼：</strong>基础实验楼+专业实验楼，计算机/物理/化学等实验课</li></ul>
+
+<h3>🏠 宿舍区（校园北部）</h3>
+<ul><li>学生公寓集中在校园北部区域</li>
+<li>靠近北门和西操场</li>
+<li>近邻宝快递柜在<strong>24号楼（西操场附近）</strong></li></ul>
+
+<h3>🍜 餐饮区</h3>
+<ul><li><strong>东苑餐厅：</strong>校园东部，靠近东门，共3层</li>
+<li><strong>西苑餐厅：</strong>校园西部，靠近西门，共3层</li>
+<li><strong>民族餐厅：</strong>西苑餐厅附近</li>
+<li><strong>拾光里商业街：</strong>南门附近，肯德基+库迪+瑞幸</li></ul>
+
+<h3>⚽ 运动区（校园东部）</h3>
+<ul><li><strong>郑航体育馆：</strong>校园东侧，龙子湖大学城最大综合体育馆（游泳馆+篮球馆+羽毛球等）</li>
+<li><strong>西操场（田径场）：</strong>宿舍区附近，足球场+跑道</li>
+<li><strong>室外篮球场/排球场/网球场：</strong>体育馆周边</li></ul>
+
+<h3>📦 生活服务区</h3>
+<ul><li><strong>菜鸟驿站：</strong>南门附近，取快递主阵地</li>
+<li><strong>近邻宝快递柜：</strong>西操场附近24号楼，24小时可取</li>
+<li><strong>京东/顺丰：</strong>南门对面物流中心</li>
+<li><strong>校医院：</strong>校园内部，基础医疗保障</li>
+<li><strong>丹尼斯超市：</strong>校内（价格偏贵，应急用）</li>
+<li><strong>联通营业厅：</strong>校内，办校园卡/宽带</li>
+</ul>
+
+<h3>🏛️ 其他重要地点</h3>
+<ul><li><strong>行政楼（综合楼）：</strong>教务处等行政部门</li>
+<li><strong>航空文化馆：</strong>展示航空发展史</li>
+<li><strong>战机展廊：</strong>贯穿校园的航空器展示长廊</li>
+<li><strong>沁湖：</strong>图书馆旁，校园最美水域</li>
+<li><strong>月牙湖：</strong>西校门左侧</li>
+<li><strong>蓝天书院：</strong>大一新生归属书院</li></ul>
+
+<h3>💡 新生实用路线</h3>
+<table><tr><th>场景</th><th>路线</th></tr>
+<tr><td>上课</td><td>宿舍 → 向西步行5-10分钟 → 基础教学楼/专业楼</td></tr>
+<tr><td>吃饭</td><td>教学楼 → 东苑（东）/西苑（西），步行3-5分钟</td></tr>
+<tr><td>取快递</td><td>宿舍 → 南门菜鸟驿站，或西操场近邻宝</td></tr>
+<tr><td>运动</td><td>宿舍 → 东侧体育馆（室内）/西操场（室外）</td></tr>
+<tr><td>看病</td><td>宿舍/教学楼 → 校医院</td></tr>
+<tr><td>买日用品</td><td>南门拾光里/庙张小区（校外，更便宜）</td></tr></table>
+
+<div class="highlight-box">💡 <strong>防迷路技巧：</strong>开学前用学校智慧迎新系统里的<strong>3D校园全景</strong>提前熟悉路线。记住三个地标——<strong>图书馆（中心）、沁湖（旁边）、西大门战机（入口）</strong>，以它们为参照就不会迷路！</div>
+        `
     }
 ];

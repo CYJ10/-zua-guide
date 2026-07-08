@@ -266,4 +266,74 @@ document.addEventListener('DOMContentLoaded', function() {
         searchInput.value = urlQuery;
         doSearch();
     }
+
+    // ===== 图片灯箱 =====
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    document.addEventListener('click', function(e) {
+        if (e.target.tagName === 'IMG' && (e.target.closest('.modal-body') || e.target.closest('.result-card'))) {
+            if (lightbox && lightboxImg) {
+                lightboxImg.src = e.target.src;
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+    });
+    if (lightbox) {
+        lightbox.addEventListener('click', function(e) {
+            if (e.target !== lightboxImg) {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+    }
+
+    // ===== 清单勾选功能（localStorage持久化） =====
+    function initChecklist() {
+        document.querySelectorAll('.checklist li').forEach(li => {
+            const id = li.getAttribute('data-id');
+            if (!id) return;
+            if (localStorage.getItem('zua-checklist-' + id) === 'true') {
+                li.classList.add('checked');
+            }
+            li.addEventListener('click', function(e) {
+                e.stopPropagation();
+                this.classList.toggle('checked');
+                localStorage.setItem('zua-checklist-' + id, this.classList.contains('checked'));
+            });
+        });
+    }
+    // 首次加载和弹窗内容变化时初始化
+    initChecklist();
+    const checklistObserver = new MutationObserver(() => initChecklist());
+    checklistObserver.observe(document.body, { childList: true, subtree: true });
+
+    // ===== 回到顶部按钮 =====
+    const backToTop = document.getElementById('backToTop');
+    if (backToTop) {
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 500) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+        backToTop.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
+
+    // ===== 平滑滚动（所有锚链接） =====
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+        a.addEventListener('click', function(e) {
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+        });
+    });
 });

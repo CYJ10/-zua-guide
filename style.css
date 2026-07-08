@@ -386,3 +386,76 @@ body {
     .category-grid, .results-grid { grid-template-columns: 1fr; }
     .logo-text h1 { font-size: 18px; }
 }
+
+/* ===== 图片灯箱 ===== */
+.modal-body img { cursor: zoom-in; transition: var(--transition); }
+.modal-body img:hover { opacity: 0.92; }
+.lightbox-overlay {
+    position: fixed; inset: 0; background: rgba(0,0,0,0.92);
+    z-index: 9999; display: none; align-items: center; justify-content: center;
+    cursor: zoom-out;
+}
+.lightbox-overlay.active { display: flex; }
+.lightbox-overlay img {
+    max-width: 92vw; max-height: 92vh;
+    border-radius: 8px; box-shadow: 0 12px 50px rgba(0,0,0,0.5);
+    animation: zoomIn 0.3s ease;
+}
+@keyframes zoomIn { from { opacity: 0; transform: scale(0.9); } to { opacity: 1; transform: scale(1); } }
+.lightbox-close {
+    position: absolute; top: 20px; right: 24px;
+    background: rgba(255,255,255,0.15); color: white;
+    border: none; width: 44px; height: 44px; border-radius: 50%;
+    font-size: 22px; cursor: pointer; transition: var(--transition);
+    z-index: 1;
+}
+.lightbox-close:hover { background: rgba(255,255,255,0.3); }
+
+/* ===== 回到顶部 ===== */
+.back-to-top {
+    position: fixed; bottom: 28px; right: 28px; z-index: 150;
+    width: 46px; height: 46px; border-radius: 50%;
+    background: var(--primary); color: white; border: none;
+    font-size: 20px; cursor: pointer; box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    opacity: 0; transform: translateY(20px);
+    transition: opacity 0.3s, transform 0.3s;
+    pointer-events: none;
+}
+.back-to-top.visible { opacity: 1; transform: translateY(0); pointer-events: auto; }
+.back-to-top:hover { background: var(--primary-light); transform: translateY(-3px); }
+
+/* ===== 清单勾选 ===== */
+.checklist { list-style: none !important; margin: 8px 0 20px !important; padding: 0 !important; }
+.checklist li {
+    padding: 10px 14px 10px 40px; margin: 4px 0; cursor: pointer;
+    border-radius: var(--radius-sm); position: relative;
+    transition: var(--transition); font-size: 15px;
+    border: 1px solid transparent; user-select: none;
+}
+.checklist li:hover { background: var(--sky); border-color: var(--sky-dark); }
+.checklist li::before {
+    content: ''; position: absolute; left: 12px; top: 50%; transform: translateY(-50%);
+    width: 20px; height: 20px; border-radius: 4px;
+    border: 2px solid #cbd5e1; background: white; transition: var(--transition);
+}
+.checklist li.checked { color: var(--text-muted); background: #f8fafc; }
+.checklist li.checked::before {
+    background: #22c55e; border-color: #22c55e;
+    content: '✓'; color: white; font-size: 13px; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+    line-height: 1;
+}
+
+/* ===== 清单进度条 ===== */
+.checklist-progress {
+    background: var(--border); border-radius: 20px; height: 8px;
+    margin: 12px 0 24px; overflow: hidden;
+}
+.checklist-progress-bar {
+    height: 100%; border-radius: 20px;
+    background: linear-gradient(90deg, #22c55e, #16a34a);
+    transition: width 0.4s ease; width: 0%;
+}
+
+/* ===== 图片在内容区的展示优化 ===== */
+.modal-body img { border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.08); }
