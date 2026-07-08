@@ -62,6 +62,78 @@ const SITE_DATA = [
         `
     },
 
+    // ==================== 教务处 ====================
+    {
+        id: "jwc",
+        category: "教务系统",
+        icon: "🏛️",
+        title: "教务处——选课、考试、学籍、成绩",
+        summary: "教务处官网 jwc.zua.edu.cn，选课/查成绩/四六级报名/学籍异动都在这里。每学期五轮选课，学分上限35分，挂科可补考重修。",
+        tags: ["教务处", "选课", "成绩", "考试", "四六级", "补考", "重修", "学籍", "休学", "复学", "转专业", "课表", "学分", "GPA", "评教", "注册"],
+        content: `
+<div style="text-align:center;margin:16px 0;">
+    <a href="https://jwc.zua.edu.cn/" target="_blank" style="display:inline-block;background:linear-gradient(135deg,#1a3a6b,#2c5aa0);color:white;padding:14px 36px;border-radius:30px;text-decoration:none;font-size:16px;font-weight:700;letter-spacing:1px;transition:0.25s;box-shadow:0 4px 16px rgba(26,58,107,0.3);">
+        🔗 点击跳转到教务处官网 → jwc.zua.edu.cn
+    </a>
+</div>
+
+<h3>🏛️ 教务处简介</h3>
+<p>郑州航院教务处是学校本科教学管理的核心部门，负责<strong>选课排课、考试组织、学籍管理、成绩管理、毕业审核</strong>等。下设教务科、考试中心、学籍科、教学研究科等多个科室。</p>
+<p>📍 办公地点：龙子湖校区综合楼</p>
+
+<h3>📚 选课指南（重要！）</h3>
+<p>学校实行<strong>多轮自主选课制</strong>（校教字〔2021〕10号），从2025-2026-2学期起启用新模式：</p>
+<table>
+<tr><th>轮次</th><th>时间</th><th>内容</th></tr>
+<tr><td><strong>第一轮（正选）</strong></td><td>学期放假前约5周</td><td>培养方案规定课程，必修课全部选定，选修课自主选择</td></tr>
+<tr><td><strong>第二轮</strong></td><td>学期放假前约3周</td><td>调整第一轮选课结果，改选其他教学班</td></tr>
+<tr><td><strong>第三轮</strong></td><td>学期末/寒暑假</td><td>全校通识选修课选课</td></tr>
+<tr><td><strong>第四轮</strong></td><td>下学期开学第1-2周</td><td>增开非当前学期课程，可提前选修高年级课程</td></tr>
+<tr><td><strong>第五轮（重修/补修）</strong></td><td>补考成绩录入后</td><td>重修、补修选课，转专业学生补选</td></tr>
+</table>
+
+<h3>⚠️ 选课关键规则</h3>
+<ul>
+<li><strong>学分限制：</strong>每学期修读原则上 ≥22学分、≤35学分（毕业当年不限）</li>
+<li><strong>停开规则：</strong>选修课低于20人停开，通识选修课低于40人停开</li>
+<li><strong>评教前置：</strong>未参加上学期评教的学生<strong>不能选课</strong>！一定要记得评教</li>
+<li><strong>缴费要求：</strong>未缴清学费且未办缓缴者，暂缓选课</li>
+<li><strong>先导课程：</strong>存在"先导后续"关系的课程，须先修先导课程</li>
+</ul>
+
+<h3>📝 考试相关</h3>
+<ul>
+<li><strong>CET-4/CET-6：</strong>全国大学英语四六级考试，每年6月和12月各一次。教务处统一组织报名</li>
+<li><strong>期末考试：</strong>每学期末由教务处统一安排，考试周一般在第18-20周</li>
+<li><strong>补考：</strong>挂科后可参加下学期初补考（注意：补考通常比正考更难通过！）</li>
+<li><strong>重修：</strong>补考不过需重修，跟着下一届上课+考试</li>
+<li><strong>成绩记载：</strong>依据《普通本专科学生课程考核与成绩记载管理办法》（校教字〔2020〕30号）</li>
+</ul>
+
+<h3>🎓 学籍管理</h3>
+<table>
+<tr><th>事项</th><th>说明</th></tr>
+<tr><td><strong>注册报到</strong></td><td>每学期开学初到学院办理。逾期两周未注册且未办暂缓的，<strong>予以退学</strong></td></tr>
+<tr><td><strong>休学/复学</strong></td><td>线上办理（教务系统）。复学仅限<strong>开学后2周内</strong>申请，过期不办复学按退学处理</td></tr>
+<tr><td><strong>转专业</strong></td><td>依据校教字〔2021〕77号文件，一般在大一申请。热门专业竞争激烈</td></tr>
+<tr><td><strong>退学</strong></td><td>未经批准连续两周未参加教学活动者，予以退学</td></tr>
+<tr><td><strong>学业预警</strong></td><td>挂科多会被学业预警（校教字〔2018〕56号），严重者可能被劝退</td></tr>
+</table>
+
+<h3>🔗 常用链接</h3>
+<table>
+<tr><th>功能</th><th>网址</th></tr>
+<tr><td>教务处首页</td><td><a href="https://jwc.zua.edu.cn/" target="_blank">jwc.zua.edu.cn</a></td></tr>
+<tr><td>通知公告（学生）</td><td><a href="https://jwc.zua.edu.cn/index/tzggxs_/25.htm" target="_blank">jwc.zua.edu.cn/index/tzggxs_.htm</a></td></tr>
+<tr><td>学业修读指导</td><td><a href="https://jwc.zua.edu.cn/jwgl/xyxdzd.htm" target="_blank">jwc.zua.edu.cn/jwgl/xyxdzd.htm</a></td></tr>
+<tr><td>学籍管理规定</td><td><a href="https://jwc.zua.edu.cn/info/1191/5929.htm" target="_blank">jwc.zua.edu.cn/info/1191/5929.htm</a></td></tr>
+<tr><td>选课管理办法</td><td><a href="https://jwc.zua.edu.cn/info/1199/3932.htm" target="_blank">jwc.zua.edu.cn/info/1199/3932.htm</a></td></tr>
+</table>
+
+<div class="highlight-box">💡 <strong>学长提醒：</strong>教务处网站是你大学四年最常用的网站之一。选课、查成绩、四六级报名、看通知都离不开它。建议<strong>收藏到浏览器书签</strong>！每学期选课前一定要提前关注通知公告，热门课名额有限，手慢无！</div>
+        `
+    },
+
     // ==================== 宿舍条件 ====================
     {
         id: "dormitory",
