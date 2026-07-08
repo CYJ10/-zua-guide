@@ -15,6 +15,7 @@ const SITE_DATA = [
 <p>郑州航空工业管理学院（Zhengzhou University of Aeronautics，简称ZUA）始建于<strong>1949年</strong>，原隶属于中国航空工业部，现为<strong>河南省人民政府与中国民用航空局共建高校</strong>。学校是河南省特色骨干学科建设高校、河南省博士学位授予重点立项培育单位。</p>
 
 <p>学校涵盖<strong>工、管、文、理、经、法、艺、教、交叉</strong>九大学科门类，现有在校本科生、研究生<strong>25,000余人</strong>，年招生计划约<strong>6,300人</strong>。</p>
+<p style="text-align:center;margin:16px 0;"><img src="images/campus-birdview.jpg" alt="郑州航空工业管理学院龙子湖校区鸟瞰图" style="max-width:100%;border-radius:12px;box-shadow:0 4px 16px rgba(0,0,0,0.1);" loading="lazy"></p>
 
 <h3>📍 校区分布</h3>
 <table>
@@ -154,6 +155,12 @@ const SITE_DATA = [
 <h3>🔌 基础设施</h3>
 <ul>
 <li><strong>空调：</strong>龙子湖校区已实现<strong>空调全覆盖</strong>，无需租赁！</li>
+</ul>
+<p style="text-align:center;margin:16px 0;display:flex;gap:12px;flex-wrap:wrap;justify-content:center;">
+<img src="images/dormitory1.jpg" alt="郑航龙子湖校区宿舍实拍" style="max-width:48%;min-width:240px;border-radius:12px;box-shadow:0 4px 16px rgba(0,0,0,0.1);" loading="lazy">
+<img src="images/dormitory2.jpg" alt="郑航龙子湖校区宿舍内景" style="max-width:48%;min-width:240px;border-radius:12px;box-shadow:0 4px 16px rgba(0,0,0,0.1);" loading="lazy">
+</p>
+<ul>
 <li><strong>洗浴：</strong>每层楼都有公共浴室，<strong>独立隔间带帘子</strong>，刷校园一卡通出水扣费</li>
 <li><strong>饮水：</strong>每层配备饮水机，支付宝扫码使用"慧生活798"小程序</li>
 <li><strong>洗衣机：</strong>每栋楼配有洗衣机</li>
@@ -250,6 +257,7 @@ const SITE_DATA = [
         content: `
 <h3>🏛️ 建筑特色</h3>
 <p>龙子湖校区图书馆由<strong>同济大学建筑设计研究院</strong>设计，是校园<strong>标志性建筑</strong>，2015年11月2日正式投入使用。</p>
+<p style="text-align:center;margin:16px 0;"><img src="images/library.jpg" alt="郑州航空工业管理学院龙子湖校区图书馆" style="max-width:100%;border-radius:12px;box-shadow:0 4px 16px rgba(0,0,0,0.1);" loading="lazy"></p>
 <ul>
 <li><strong>建筑面积：</strong>4.36万平方米</li>
 <li><strong>设计理念：</strong>"由内而外"——门字形主体+篆刻立面，仿佛一扇<strong>正要打开的书本</strong>，寓意"知识之门"</li>
@@ -314,6 +322,9 @@ const SITE_DATA = [
 <li><strong>月牙湖：</strong>校门左侧，形如月牙</li>
 <li><strong>三角湖/太阳湖：</strong>校门右侧</li>
 <li>校园水域众多，"水灵灵"的校园氛围</li>
+</ul>
+<p style="text-align:center;margin:16px 0;"><img src="images/qinhu.jpg" alt="郑州航院龙子湖校区沁湖" style="max-width:100%;border-radius:12px;box-shadow:0 4px 16px rgba(0,0,0,0.1);" loading="lazy"></p>
+<ul>
 </ul>
 
 <h3>🌸 四季风景</h3>
@@ -826,6 +837,9 @@ const SITE_DATA = [
 <p>郑州航院是全国少有的<strong>校园里停着多架真飞机</strong>的大学，这是学校最独特的文化名片：</p>
 <ul>
 <li><strong>西大门：</strong>三架歼-7等战斗机一字排开——由中航工业飞行试验研究所和空军赠送，是学校最震撼的"门面"</li>
+</ul>
+<p style="text-align:center;margin:16px 0;"><img src="images/fighter-jet.jpg" alt="郑州航院龙子湖校区歼-7战斗机" style="max-width:100%;border-radius:12px;box-shadow:0 4px 16px rgba(0,0,0,0.1);" loading="lazy"></p>
+<ul>
 <li><strong>北门口：</strong>民航客机展示</li>
 <li><strong>实验楼前：</strong>教练机停放</li>
 <li><strong>战机展廊：</strong>校园内专门展示航空器发展历程的长廊</li>
